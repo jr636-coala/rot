@@ -22,7 +22,7 @@ int main(int argc, char* argv[])
 	int rotCode, seed = 0;
 	std::string input = "";
 	//char* inputBuffer = new char[5000];
-	std::string mDict = "1234567890-=qwertyuiop[]asdfghjkl;'#zxcvbnm,./\\\"!£$%^&*()_+QWERTYUIOP{}ASDFGHJKL:@~|ZXCVBNM<>?¬`¦";
+	std::string mDict = "1234567890-=qwertyuiop[]asdfghjkl;'#zxcvbnm,./\\\"!Â£$%^&*()_+QWERTYUIOP{}ASDFGHJKL:@~|ZXCVBNM<>?Â¬`Â¦";
 	//~~
 
 	//@@			Gathering inputs
@@ -49,7 +49,7 @@ void wait()
 
 std::string rndDictionary(std::string dict, int seed)
 {
-	std::string r = ""; // No need to initialize it to an empty string as it is automatically done (as it is an object), just easier than arguing
+	std::string r = ""; // No need to initialize it to an empty string as it is automatically done, just easier than arguing
 						// with people who think otherwise
 	int* tmp; // The getRnd function returns a pointer, so although we will always have one element this is nessicary
 	while(dict.length()) // While it has a length ( length > 0), the procedure needs to repeat
